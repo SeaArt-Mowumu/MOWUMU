@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendPulse - 热点追踪器</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script type="module" src="./src/main.ts"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="pulse-ring"></div>
+                    <h1 class="logo">TREND<span class="pulse-text">PULSE</span></h1>
+                    <span class="tagline">全球热点实时追踪</span>
+                </div>
+                <div class="header-controls">
+                    <button class="refresh-btn" id="refreshBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
+                        </svg>
+                        刷新
+                    </button>
+                    <div class="time-indicator">
+                        <span class="live-dot"></span>
+                        <span id="updateTime">实时更新</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="news-grid" id="newsGrid">
+                <div class="loading">加载中...</div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
